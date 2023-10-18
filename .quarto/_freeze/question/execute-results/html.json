@@ -1,0 +1,14 @@
+{
+  "hash": "d99647c9e1f4c4c3030bca155b3bb0a9",
+  "result": {
+    "markdown": "---\ntitle: \"Ask A Question\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n\"Feel Free to Drop Me An Email at: \"\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"Feel Free to Drop Me An Email at: \"\n```\n:::\n\n```{.r .cell-code}\n\"e0969574@u.nus.edu\"\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"e0969574@u.nus.edu\"\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

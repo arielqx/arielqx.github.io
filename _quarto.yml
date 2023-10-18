@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "arielqx.github.io"
+  back-to-top-navigation: true
+  reader-mode: true
+  page-footer: 
+      background: light
+      left:
+        - icon: github
+          href: https://github.com/arielqx/Github-Folder.git
+      right: "Copyright 2023, Ariel Quek" 
+  navbar:
+      background: primary
+      search: true
+      left:
+        - href: index.qmd
+          text: "Dashboard"
+        - href: about.qmd
+          text: "About Me"
+        - href: project.qmd
+          text: "My Final Project"
+        - href: question.qmd
+          text: "Ask A Question"
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+
