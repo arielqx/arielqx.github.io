@@ -10,7 +10,7 @@ website:
       background: light
       left:
         - icon: github
-          href: https://github.com/arielqx/Github-Folder.git
+          href: https://github.com/arielqx/
       right: "Copyright 2023, Ariel Quek" 
   navbar:
       background: primary

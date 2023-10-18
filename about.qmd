@@ -12,16 +12,8 @@ format:
 
 ## **Introduction:**
 
-I am *Ariel*, a year 2 CNM (Communications and New Media) student at NUS!
+I am *Ariel*, a year 2 CNM (Communications and New Media) student at NUS! 
 
-```{r}
-#| echo: FALSE
-#| out.width: 50%
-#| fig-align: "center"
-knitr::include_graphics("about.jpg")
-```
-
-\
 
 ## **Courses I've Taken:**
 
@@ -48,6 +40,8 @@ As of **end-2023**, I have taken the following modules:
 -   NM2207 - Computational Media Literacy *(this module!)*
 
     <https://nusmods.com/courses/NM2207/computational-media-literacy>
+
+
 
 *Core Modules \~*
 
@@ -78,5 +72,6 @@ As of **end-2023**, I have taken the following modules:
 -   GEA1000 - Quantitative Reasoning
 
     <https://nusmods.com/courses/GEA1000/quantitative-reasoning-with-data>
+
 
 From each module, I have learnt many valuable skills, and had a lot of fun\!😁
