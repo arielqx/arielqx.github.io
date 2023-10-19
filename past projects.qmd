@@ -51,4 +51,4 @@ Here's a snippet of the work I've done for NM2207 so far! 😊
 ## Week 9
 
 -   [Challenge and Code Along](https://github.com/arielqx/Github-Folder/blob/main/Week-9/Code-Along-And-Challenge-9.pdf)
--   Diary entry 1
+-   [Diary entry 1](https://github.com/arielqx/Github-Folder/blob/main/Week-9/Diary-entry-1.pdf)
