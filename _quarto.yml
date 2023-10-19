@@ -22,12 +22,14 @@ website:
           text: "About Me"
         - href: project.qmd
           text: "My Final Project"
+        - href: past projects.qmd
+          text: "Past Projects"
         - href: question.qmd
           text: "Ask A Question"
-
+        
 format:
   html:
-    theme: flatly
+    theme: pulse
     css: styles.css
     toc: true
 
