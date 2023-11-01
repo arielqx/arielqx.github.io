@@ -24,6 +24,8 @@ website:
           text: "My Final Project"
         - href: past projects.qmd
           text: "Past Projects"
+        - href: practice.qmd
+          text: "Practice Project"
         - href: question.qmd
           text: "Ask A Question"
         
