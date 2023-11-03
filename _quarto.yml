@@ -32,9 +32,8 @@ format:
        light: pulse
        dark: vapor
     fontsize: 1.0em
-    linestretch: 2.5
-    linkcolor: purple
-    
+    linestretch: 1.7
+    linkcolor: darkorchid
     css: styles.css
     toc: true
 

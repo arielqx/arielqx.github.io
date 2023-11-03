@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+mainfont: Calibri
 execute:
   echo: FALSE
   

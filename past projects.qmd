@@ -1,5 +1,6 @@
 ---
 title: "Past Projects"
+mainfont: Calibri
 
 format: 
   html: 
