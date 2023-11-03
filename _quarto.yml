@@ -5,7 +5,6 @@ project:
 website:
   title: "arielqx.github.io"
   back-to-top-navigation: true
-  reader-mode: true
   page-footer: 
       background: light
       left:
@@ -29,7 +28,13 @@ website:
         
 format:
   html:
-    theme: flatly
+    theme: 
+       light: pulse
+       dark: vapor
+    fontsize: 1.0em
+    linestretch: 2.5
+    linkcolor: purple
+    
     css: styles.css
     toc: true
 

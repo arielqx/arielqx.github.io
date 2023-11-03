@@ -6,15 +6,15 @@ title: "Data Story"
 
 ### **Research Question:**
 
-*"How influential was the home advantage for the football clubs in the 21-22 premier league season?"*
+> *"How influential was the home advantage for the football clubs in the 21-22 premier league season?"*
 
 ### **About the Premier League**
 
 ```{r, echo=FALSE}
 #| eval: TRUE
-#| out.width: "100%"
+#| out.width: "70%"
 #| fig-align: center
-knitr::include_graphics("logo2.png")
+knitr::include_graphics("logo.avif")
 ```
 
 The Premier League is the highest tier of football matches in the English football league. A total of 20 top football teams will compete in this league, which takes place between August and May annually, for a total of 380 matches.
@@ -25,7 +25,7 @@ Read more on the Premier League's [official website](https://www.premierleague.c
 
 ```{r, echo=FALSE}
 #| eval: TRUE
-#| out.width: "100%"
+#| out.width: "70%"
 #| fig-align: center
 knitr::include_graphics("mancity.jpg")
 ```
@@ -52,19 +52,27 @@ str(weeklyrank)
 
 **From the above we can identify a few important variables:**
 
-| Variable | Significance          | Used For                                                           | Variable Type  | From Data-Frame  |
+| Variable | Significance          | Used For                                                           | Type  | DF         |
 |----------------|----------------------------------------|------------------------------------------------------------------|--|--|
-| \$HTHG   | Half Time Home Goals  | Analysis of home advantage on half time result                     | INT            | soccer           |
-| \$HTAG   | Half Time Away Goals  | Analysis of home advantage on half time result                     | INT            | soccer           |
-| \$HTR    | Half Time Result      | Analysis of home advantage on half time result                     | CHR            | soccer           |
-| \$FTHG   | Full Time Home Goals  | Analysis of home advantage on full time result                     | INT            | soccer           |
-| \$FTAG   | Full Time Away Goals  | Analysis of home advantage on full time result                     | INT            | soccer           |
-| \$FTR    | Full Time Result      | Analysis of home advantage on full time result                     | CHR            | soccer           |
-| \$Team   | Football Club Name    | Analysis of effect of home advantage on weekly ranking of each FC  | CHR            | weeklyrank       |
-| \$Rank   | Ranking out of 20     | Analysis of effect of home advantage on weekly ranking of each FC  | INT            | weeklyrank       |
-| \$Week   | Week Number           | Analysis of effect of home advantage on weekly ranking of each FC  | INT            | weeklyrank       |
+| \$HTHG   | Half Time Home Goals  | Analysis of home advantage on half time result                     | INT   | soccer     |
+| \$HTAG   | Half Time Away Goals  | Analysis of home advantage on half time result                     | INT   | soccer     |
+| \$HTR    | Half Time Result      | Analysis of home advantage on half time result                     | CHR   | soccer     |
+| \$FTHG   | Full Time Home Goals  | Analysis of home advantage on full time result                     | INT   | soccer     |
+| \$FTAG   | Full Time Away Goals  | Analysis of home advantage on full time result                     | INT   | soccer     |
+| \$FTR    | Full Time Result      | Analysis of home advantage on full time result                     | CHR   | soccer     |
+| \$Team   | Football Club Name    | Analysis of effect of home advantage on weekly ranking of each FC  | CHR   | weeklyrank |
+| \$Rank   | Ranking out of 20     | Analysis of effect of home advantage on weekly ranking of each FC  | INT   | weeklyrank |
+| \$Week   | Week Number           | Analysis of effect of home advantage on weekly ranking of each FC  | INT   | weeklyrank |
 
-### Discussion of Findings: 
+**Creating a new dataframe:**
+
+*WIP...*
+
+### **Visualizing Findings:** 
+
+*WIP...*
+
+### **Discussion of Findings:** 
 
 *WIP...*
 
