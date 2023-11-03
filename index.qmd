@@ -2,11 +2,11 @@
 title: "Hello!"
 ---
 
-*Welcome to arielqx.github.io!* 😊
+*Welcome!* 😊
 
 ***This website was created for the module NM2207 Computational Media Literacy!***
 
-Check out the *"About Me"* page to read more about me, and the *"My Final Project"* page to take a look at my final project for NM2207.
+Check out the *"About Me"* page to read more about me, the "Past Projects" page to read about my progress in NM2207, and the *"Data Story"* page to take a look at my final project for NM2207.
 
 If you have any questions, please head on over to the *"Ask A Question"* tab to email any questions to me!\
 \

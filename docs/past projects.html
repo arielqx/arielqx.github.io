@@ -90,15 +90,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./project.html" rel="" target="">
- <span class="menu-text">My Final Project</span></a>
+ <span class="menu-text">Data Story</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./past projects.html" rel="" target="" aria-current="page">
  <span class="menu-text">Past Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./practice.html" rel="" target="">
- <span class="menu-text">Practice Project</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./question.html" rel="" target="">
@@ -135,6 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#week-8" id="toc-week-8" class="nav-link" data-scroll-target="#week-8">Week 8</a></li>
   <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a></li>
   <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a></li>
+  <li><a href="#week-11" id="toc-week-11" class="nav-link" data-scroll-target="#week-11">Week 11</a></li>
   </ul>
 </nav>
     </div>
@@ -158,6 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>All relevant documents are uploaded on the Github Repository <a href="https://github.com/arielqx/Github-Folder.git">here</a>.</p>
 <p>Here’s a snippet of the work I’ve done for NM2207 so far! 😊</p>
 <section id="week-1" class="level2">
 <h2 class="anchored" data-anchor-id="week-1">Week 1</h2>
@@ -217,13 +215,19 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="week-9">Week 9</h2>
 <ul>
 <li><a href="https://github.com/arielqx/Github-Folder/blob/main/Week-9/Code-Along-And-Challenge-9.pdf">Challenge and Code Along</a></li>
-<li><a href="https://github.com/arielqx/Github-Folder/blob/main/Week-9/Diary-entry-1.pdf">Diary Entry 1</a></li>
+<li><a href="https://github.com/arielqx/Github-Folder/blob/main/Week-9/Diary-entry-1.pdf">Diary Entry #1</a></li>
 </ul>
 </section>
 <section id="week-10" class="level2">
 <h2 class="anchored" data-anchor-id="week-10">Week 10</h2>
 <ul>
-<li><a href="https://github.com/arielqx/Github-Folder/tree/48db5a1197b5da6d418ec2c85bb972774ff9649b/Week-10">Diary Entry 2</a></li>
+<li><a href="https://github.com/arielqx/Github-Folder/tree/48db5a1197b5da6d418ec2c85bb972774ff9649b/Week-10">Diary Entry #2</a></li>
+</ul>
+</section>
+<section id="week-11" class="level2">
+<h2 class="anchored" data-anchor-id="week-11">Week 11</h2>
+<ul>
+<li><a href="https://github.com/arielqx/Github-Folder/blob/main/Week-11/Diary-Entries-NM2207.pdf">Diary Entry #3</a></li>
 </ul>
 
 
@@ -461,6 +465,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
@@ -479,7 +499,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">Copyright 2023, Ariel Quek</div>
+    <div class="nav-footer-right">Copyright 2023 Ariel QX</div>
   </div>
 </footer>
 

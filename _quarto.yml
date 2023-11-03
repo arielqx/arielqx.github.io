@@ -11,7 +11,7 @@ website:
       left:
         - icon: github
           href: https://github.com/arielqx/
-      right: "Copyright 2023, Ariel Quek" 
+      right: "Copyright 2023 Ariel QX" 
   navbar:
       background: primary
       search: true
@@ -21,17 +21,15 @@ website:
         - href: about.qmd
           text: "About Me"
         - href: project.qmd
-          text: "My Final Project"
+          text: "Data Story"
         - href: past projects.qmd
           text: "Past Projects"
-        - href: practice.qmd
-          text: "Practice Project"
         - href: question.qmd
           text: "Ask A Question"
         
 format:
   html:
-    theme: pulse
+    theme: flatly
     css: styles.css
     toc: true
 
