@@ -3,6 +3,6 @@ title: "Ask A Question"
 mainfont: Calibri
 ---
 
-### Feel Free to Drop Me An Email at:
+### Do you have a question? 
 
-*e0969574\@u.nus.edu*
+Feel free to drop me an email at: *e0969574\@u.nus.edu*

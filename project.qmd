@@ -47,7 +47,7 @@ More information about why these clubs are the "Big Six" can be found on [sporti
 #| eval: TRUE
 #| out.width: "70%"
 #| fig-align: center
-knitr::include_graphics("mancity.jpg")
+knitr::include_graphics("mancity.avif")
 ```
 
 In the Premier League season of 2021-2022, Manchester City football club clinched the championship once again, after winning the 2020-2021 season as well, clocking their 6th Premier League title.
@@ -73,7 +73,7 @@ str(weeklyrank)
 **From the above we can identify a few important variables:**
 
 | Variable | Significance         | Used For                                                          | Type | DF         |
-|--------------|--------------|-----------------|--------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | \$HTHG   | Half Time Home Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTAG   | Half Time Away Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTR    | Half Time Result     | Analysis of home advantage on half time result                    | CHR  | soccer     |
@@ -234,10 +234,19 @@ Overall, it seems that the home advantage was indeed influential in helping team
 
 WIP!
 
+in the meantime... you can watch this awesome shot ⚽
+
+```{r, echo=FALSE}
+#| eval: TRUE
+#| out.width: "70%"
+#| fig-align: center
+knitr::include_graphics("messi.gif")
+```
+
 ### **References:**
 
 | *Premier league competition format & history \| premier league*. (n.d.). Retrieved 6 November 2023, from https://www.premierleague.com/premier-league-explained
 
 | Rfordatascience. (n.d.). *GitHub - rfordatascience/tidytuesday: Official repo for the #tidytuesday project*. GitHub. https://github.com/rfordatascience/tidytuesday/
 
-| *Who are the Premier League \'big six\'? Top English clubs & nickname explained*. (2021, August 13). https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags
+| *Who are the Premier League 'big six'? Top English clubs & nickname explained*. (2021, August 13). https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags
