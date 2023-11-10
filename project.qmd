@@ -47,7 +47,7 @@ More information about why these clubs are the "Big Six" can be found [here.](ht
 #| eval: TRUE
 #| out.width: "100%"
 #| fig-align: center
-knitr::include_graphics("mancity.avif")
+knitr::include_graphics("mancitywin.jpg")
 ```
 
 In the Premier League season of 2021-2022, Manchester City football club clinched the championship once again, after winning the 2020-2021 season as well, clocking their 6th Premier League title.
@@ -67,7 +67,7 @@ str(weeklyrank)
 ```
 
 | Variable | Significance         | Used For                                                          | Type | DF         |
-|----------|----------|--------------------------------|----------|----------|
+|------------|------------|-------------------------|------------|------------|
 | \$HTHG   | Half Time Home Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTAG   | Half Time Away Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTR    | Half Time Result     | Analysis of home advantage on half time result                    | CHR  | soccer     |
