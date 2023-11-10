@@ -10,6 +10,8 @@ website:
       left:
         - icon: github
           href: https://github.com/arielqx/
+        - icon: linkedin
+          href: linkedin.com/in/ariel-qx-883305259 
       right: "Copyright 2023 Ariel QX" 
   navbar:
       background: primary
@@ -30,7 +32,7 @@ format:
   html:
     theme: 
        light: pulse
-       dark: darkly
+       dark: vapor
     fontsize: 1.0em
     linestretch: 1.7
     linkcolor: darkorchid

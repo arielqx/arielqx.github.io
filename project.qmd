@@ -39,13 +39,13 @@ These six football clubs include *(in no particular order)*:
 | Manchester City   | 7                           |
 | Tottenham Hotspur | 0                           |
 
-More information about why these clubs are the "Big Six" can be found on [sportingnews.com.](https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags)
+More information about why these clubs are the "Big Six" can be found [here.](https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags)
 
 ## Premier League 2021-2022
 
 ```{r, echo=FALSE}
 #| eval: TRUE
-#| out.width: "70%"
+#| out.width: "100%"
 #| fig-align: center
 knitr::include_graphics("mancity.avif")
 ```
@@ -54,26 +54,20 @@ In the Premier League season of 2021-2022, Manchester City football club clinche
 
 ### The Data
 
-Acquiring the relevant (cleaned) data-sets:
+Two sets of data "soccer" and "weekly rank" with the following variables:
 
--   Looking at structure of data-frame of relevant match details:
-
-```{r, echo=TRUE, eval=TRUE}
+```{r, echo=FALSE, eval=TRUE}
 soccer <- read.csv("soccer21-22.csv")
 weeklyrank <- read.csv("weeklyrank.csv")
 str(soccer)
 ```
 
--   Looking at structure of data-frame of weekly rankings:
-
-```{r, echo=TRUE, eval=TRUE}
+```{r, echo=FALSE, eval=TRUE}
 str(weeklyrank)
 ```
 
-**From the above we can identify a few important variables:**
-
 | Variable | Significance         | Used For                                                          | Type | DF         |
-|----------|----------------------|-------------------------------------------------------------------|------|------------|
+|----------|----------|--------------------------------|----------|----------|
 | \$HTHG   | Half Time Home Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTAG   | Half Time Away Goals | Analysis of home advantage on half time result                    | INT  | soccer     |
 | \$HTR    | Half Time Result     | Analysis of home advantage on half time result                    | CHR  | soccer     |
@@ -86,11 +80,9 @@ str(weeklyrank)
 
 ### **Creating a new data frame:**
 
-#### From "soccer" data set:
-
 Creating a new data frame *(df)* by selecting columns *"Date", "HomeTeam", "AwayTeam", "FTR", "FTHG"* and *"FTAG"*.
 
-```{r, echo=TRUE, eval=TRUE}
+```{r, echo=FALSE, eval=TRUE}
 library(tidyverse) 
 df <- select(soccer,
              Date,               
@@ -102,7 +94,7 @@ df <- select(soccer,
 head(df)
 ```
 
-```{r, echo=FALSE, eval=TRUE}
+```{r, echo=TRUE, eval=TRUE}
 ## Creating separate dataframes 
 ManUnited_df <- df[df$HomeTeam=="Man United",] 
 Liverpool_df <- df[df$HomeTeam=="Liverpool",] 
@@ -114,7 +106,7 @@ Tottenham_df <- df[df$HomeTeam=="Tottenham",]
 
 ### **Findings:**
 
-Home Team vs Away Team wins for Big 6 Teams:
+**Home Team vs Away Team wins for Big 6 Teams:**
 
 ```{r, eval=TRUE, echo=TRUE}
 library(ggplot2)
@@ -230,11 +222,15 @@ For all of the teams, the home team lines largely seem to be greater than that o
 
 Overall, it seems that the home advantage was indeed influential in helping team have more shots on target. 🤔
 
-### **Conclusion**
+**Weekly rankings of each team (H vs A vs D):**
 
-WIP!
+```{r}
 
-in the meantime... you can watch this awesome shot ⚽
+```
+
+## **Conclusion**
+
+WIP but in the meantime... you can watch this awesome shot ⚽
 
 ```{r, echo=FALSE}
 #| eval: TRUE
@@ -243,9 +239,11 @@ in the meantime... you can watch this awesome shot ⚽
 knitr::include_graphics("messi.gif")
 ```
 
-### **References:**
+## **References:**
 
 | *Premier league competition format & history \| premier league*. (n.d.). Retrieved 6 November 2023, from https://www.premierleague.com/premier-league-explained
+
+| *Premier League match data 2021-2022*. (2022, September 25). Kaggle. https://www.kaggle.com/datasets/evangower/premier-league-match-data
 
 | Rfordatascience. (n.d.). *GitHub - rfordatascience/tidytuesday: Official repo for the #tidytuesday project*. GitHub. https://github.com/rfordatascience/tidytuesday/
 
