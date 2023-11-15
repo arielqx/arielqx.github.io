@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -136,6 +102,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./question.html" rel="" target="">
  <span class="menu-text">Ask A Question</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./app2.html" rel="" target="">
+ <span class="menu-text">EPL 21-22</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -163,9 +133,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
   <li><a href="#creating-a-new-data-frame" id="toc-creating-a-new-data-frame" class="nav-link" data-scroll-target="#creating-a-new-data-frame"><strong>Creating a new data frame:</strong></a></li>
   <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings"><strong>Findings:</strong></a></li>
+  </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><strong>References:</strong></a></li>
-  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -251,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>More information about why these clubs are the “Big Six” can be found on <a href="https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags">sportingnews.com.</a></p>
+<p>More information about why these clubs are the “Big Six” can be found <a href="https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags">here.</a></p>
 </section>
 <section id="premier-league-2021-2022" class="level2">
 <h2 class="anchored" data-anchor-id="premier-league-2021-2022">Premier League 2021-2022</h2>
@@ -259,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="mancity.avif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="mancitywin.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -267,14 +237,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In the Premier League season of 2021-2022, Manchester City football club clinched the championship once again, after winning the 2020-2021 season as well, clocking their 6th Premier League title.</p>
 <section id="the-data" class="level3">
 <h3 class="anchored" data-anchor-id="the-data">The Data</h3>
-<p>Acquiring the relevant (cleaned) data-sets:</p>
-<ul>
-<li>Looking at structure of data-frame of relevant match details:</li>
-</ul>
+<p>Two sets of data “soccer” and “weekly rank” with the following variables:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>soccer <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"soccer21-22.csv"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>weeklyrank <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"weeklyrank.csv"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(soccer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   380 obs. of  22 variables:
  $ Date    : chr  "13/08/2021" "14/08/2021" "14/08/2021" "14/08/2021" ...
@@ -301,11 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  $ AR      : int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
 </div>
 </div>
-<ul>
-<li>Looking at structure of data-frame of weekly rankings:</li>
-</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(weeklyrank)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   760 obs. of  5 variables:
  $ Team  : chr  "Man United" "Chelsea" "Liverpool" "West Ham" ...
@@ -315,14 +275,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  $ Week  : int  1 1 1 1 1 1 1 1 1 1 ...</code></pre>
 </div>
 </div>
-<p><strong>From the above we can identify a few important variables:</strong></p>
 <table class="table">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 18%">
-<col style="width: 57%">
-<col style="width: 5%">
-<col style="width: 10%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 22%">
+<col style="width: 19%">
+<col style="width: 19%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -402,98 +361,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="creating-a-new-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="creating-a-new-data-frame"><strong>Creating a new data frame:</strong></h3>
-<section id="from-soccer-data-set" class="level4">
-<h4 class="anchored" data-anchor-id="from-soccer-data-set">From “soccer” data set:</h4>
 <p>Creating a new data frame <em>(df)</em> by selecting columns <em>“Date”, “HomeTeam”, “AwayTeam”, “FTR”, “FTHG”</em> and <em>“FTAG”</em>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tidyverse' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'ggplot2' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tibble' was built under R version 4.2.1</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tidyr' was built under R version 4.2.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'readr' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'purrr' was built under R version 4.2.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dplyr' was built under R version 4.2.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'stringr' was built under R version 4.2.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'forcats' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'lubridate' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.3     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">select</span>(soccer,</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>             Date,               </span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>             FTR,              </span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>             HST,              </span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>             AST,              </span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>             HomeTeam,</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>             AwayTeam) </span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>        Date FTR HST AST   HomeTeam       AwayTeam
-1 13/08/2021   H   3   4  Brentford        Arsenal
-2 14/08/2021   H   8   3 Man United          Leeds
-3 14/08/2021   A   3   8    Burnley       Brighton
-4 14/08/2021   H   6   1    Chelsea Crystal Palace
-5 14/08/2021   H   6   3    Everton    Southampton
-6 14/08/2021   H   5   3  Leicester         Wolves</code></pre>
-</div>
-</div>
-</section>
 </section>
 <section id="findings" class="level3">
 <h3 class="anchored" data-anchor-id="findings"><strong>Findings:</strong></h3>
-<p>Home Team vs Away Team wins for Big 6 Teams:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'cowplot' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'cowplot'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:lubridate':
-
-    stamp</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>fig1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ManUnited_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"red2"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Man United"</span>) </span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>fig2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Liverpool_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"firebrick"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Liverpool"</span>)</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>fig3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Arsenal_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"coral1"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Arsenal"</span>) </span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>fig4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Chelsea_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Chelsea"</span>) </span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>fig5 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ManCity_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"lightskyblue"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Man City"</span>) </span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>fig6 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Tottenham_df, <span class="fu">aes</span>(<span class="at">x=</span>Date, <span class="at">y=</span>FTR))<span class="sc">+</span><span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"navyblue"</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Dates"</span>,<span class="at">y=</span><span class="st">"Full Time Result"</span>, <span class="at">title=</span><span class="st">"Tottenham"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p><strong>Home Team vs Away Team wins for Big 6 Teams:</strong></p>
 <p>From the findings, it is clear that from a glance, most of the time the home team will get a win when playing on home grounds. This is most prominent in the case of Liverpool, where out of 20 games, up to 16 games were Home Team wins, and the rest were draws.</p>
 <div class="cell" data-layout-align="center" data-caption="Home Team vs Away Team Wins">
 <div class="cell-output-display">
@@ -517,29 +389,45 @@ Attaching package: 'cowplot'</code></pre>
 </div>
 <p>For all of the teams, the home team lines largely seem to be greater than that of the away teams. This is further highlighted for teams A to E, Manchester United, Liverpool, Arsenal, Chelsea and Manchester City, whose home shots on target seem to spike much more in matches against away teams, reaching highs that pull the difference apart. However, Tottenham is an exception, with the highest scores being held by the away teams, hitting up to 10 shots on target.</p>
 <p>Overall, it seems that the home advantage was indeed influential in helping team have more shots on target. 🤔</p>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h3>
-<p>WIP!</p>
-<p>in the meantime… you can watch this awesome shot ⚽</p>
+<p><strong>Weekly rankings of each team (H vs A vs D):</strong></p>
+<p>Plot the rankings of each team by week number (bar graph)</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        Team Week Rank
+1 Man United    1    1
+2    Chelsea    1    2
+3  Liverpool    1    3
+4   West Ham    1    4
+5    Everton    1    5
+6  Brentford    1    6</code></pre>
+</div>
+</div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="messi.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="Rankplot.png" class="img-fluid figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>From the above graph, we can see that most of the teams seem to stay largely at the top ranks for each week, especially teams like Liverpool, Chelsea, and Manchester United. Hence, we take a look at the proportion of games overall played on home ground for each of these three teams to compare:</p>
+<p>Move on over to EPL 21-22 for more information!</p>
 </section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references"><strong>References:</strong></h3>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h2>
+<p>All in all, it is clear that most of the teams playing on home ground do have some advantage, and it does have significant contribution for the games, however there are exceptions such as for teams like Tottenham, and in such cases it is valuable to consider other variable factors affecting the gameplay of the teams involved.</p>
+<p>Thanks for reading, and we look forward to our new champions from the ongoing 2022/2023 English Premier League! ⚽</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references"><strong>References:</strong></h2>
 <p><em>Premier league competition format &amp; history | premier league</em>. (n.d.). Retrieved 6 November 2023, from https://www.premierleague.com/premier-league-explained</p>
+<p><em>Premier League match data 2021-2022</em>. (2022, September 25). Kaggle. https://www.kaggle.com/datasets/evangower/premier-league-match-data</p>
 <p>Rfordatascience. (n.d.). <em>GitHub - rfordatascience/tidytuesday: Official repo for the #tidytuesday project</em>. GitHub. https://github.com/rfordatascience/tidytuesday/</p>
 <p><em>Who are the Premier League ‘big six’? Top English clubs &amp; nickname explained</em>. (2021, August 13). https://www.sportingnews.com/ca/soccer/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/8onqxiy3jynf1qr8b8kt8aags</p>
 
 
-</section>
 </section>
 </section>
 
@@ -900,6 +788,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/arielqx/">
       <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="./linkedin.com/in/ariel-qx-883305259">
+      <i class="bi bi-linkedin" role="img">
 </i> 
     </a>
   </li>  

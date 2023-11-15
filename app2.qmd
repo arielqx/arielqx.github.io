@@ -2,7 +2,8 @@
 title: "EPL 21-22"
 ---
 
-```{r}
+```{r, eval=TRUE, echo=FALSE, warning=FALSE}
+library(shiny)
 library(DT)
 
 ui <- fluidPage(
