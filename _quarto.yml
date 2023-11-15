@@ -27,8 +27,6 @@ website:
           text: "Past Projects"
         - href: question.qmd
           text: "Ask A Question"
-        - href: app2.qmd
-          text: "EPL 21-22"
         
 format:
   html:

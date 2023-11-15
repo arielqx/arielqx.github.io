@@ -200,6 +200,6 @@
     "href": "app2.html",
     "title": "EPL 21-22",
     "section": "",
-    "text": "Attaching package: 'DT'\n\n\nThe following objects are masked from 'package:shiny':\n\n    dataTableOutput, renderDataTable\n\n\n\nListening on http://127.0.0.1:4320\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Warning: package 'DT' was built under R version 4.2.2\n\n\n\nAttaching package: 'DT'\n\n\nThe following objects are masked from 'package:shiny':\n\n    dataTableOutput, renderDataTable\n\n\n\nListening on http://127.0.0.1:4176\n\n\nWarning: Error in exprFunc: object 'soccer' not found\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]

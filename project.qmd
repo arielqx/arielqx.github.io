@@ -287,9 +287,7 @@ ggsave("Rankplot.png",Rankplot,width=10, height=8, units="in")
 knitr::include_graphics("Rankplot.png")
 ```
 
-From the above graph, we can see that most of the teams seem to stay largely at the top ranks for each week, especially teams like Liverpool, Chelsea, and Manchester United. Hence, we take a look at the proportion of games overall played on home ground for each of these three teams to compare:
-
-Move on over to EPL 21-22 for more information!
+From the above graph, we can see that most of the teams seem to stay largely at the top ranks for each week, especially teams like Liverpool, Chelsea, and Manchester United. Hence, we take a look at the proportion of games overall played on home ground for each of these three teams to compare and from the data collected above we know that each team has the same number of games (19) played on home ground and each get to be the "Home Team" for 19 matches.
 
 ## **Conclusion**
 

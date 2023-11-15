@@ -1,22 +1,17 @@
 ---
 title: "EPL 21-22"
+format: html
+execute:
+  echo: false
 ---
 
-```{r, eval=TRUE, echo=FALSE, warning=FALSE}
-library(shiny)
-library(DT)
+```{r}
+install.packages('rsconnect')
 
-ui <- fluidPage(
-  h2("The 21-22 Premier League Season"),
-  DT::dataTableOutput("soccer")
-)
+rsconnect::setAccountInfo(name='arielqx',
+			  token='48A1FFC3D5223DB0F88AC80CE1C62752',
+			  secret='WIFeJ6s+phAz3+lTqZ7qLUpp+QGARq9IlXd9Xe+U')
 
-server <- function(input, output) {
-  output$soccer = DT::renderDataTable({
-    soccer
-  })
-}
-
-shinyApp(ui, server)
-
+library(rsconnect)
+    rsconnect::deployApp(appDir="C:/Users/Ariel/OneDrive/Documents/arielqx.github.io/arielqx.github.io/app1.R", appFiles=c('app1.R'), account = 'arielqx', server = 'shinyapps.io')
 ```
