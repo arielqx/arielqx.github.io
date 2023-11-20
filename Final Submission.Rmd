@@ -11,15 +11,15 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Final Write-Up 
+## Final Write-Up
 
-#### Introduction 
+#### Introduction
 
 The theme of my data story revolves around soccer, specifically the 21-22 English Premier League (EPL). As the current 23-24 EPL season rages on, football fans can often feel the difference between home games and away games. The research question, "How influential was the home advantage for the Big Six football clubs in the 21-22 premier league season?" is hence one that is important to address in the interests of football fans, both old and new.
 
-### Methodology 
+### Methodology
 
-Using a recent season like the 21-22 EPL season can be useful to help answer this research question. Taking data sources form 21-22 EPL season, variables like weekly rankings for each EPL team, the individual match statistics including full time and half time results, the number of fouls and red or yellow cards, the referees of each game, can be extremely useful. This is because there can be many factors affecting the result of the game. However, investigating the effect of home advantage would mean that the independent variable would be the home team and the dependent variables would be the shots on target, the half time and full time results, etc. \
+Using a recent season like the 21-22 EPL season can be useful to help answer this research question. Taking data sources form 21-22 EPL season, variables like weekly rankings for each EPL team, the individual match statistics including full time and half time results, the number of fouls and red or yellow cards, the referees of each game, can be extremely useful. This is because there can be many factors affecting the result of the game. However, investigating the effect of home advantage would mean that the independent variable would be the home team and the dependent variables would be the shots on target, the half time and full time results, etc.\
 \
 With these in mind, I depicted the findings of a comparison in scatter plots of the home team wins against away team wins for each of the Big 6 Football clubs in the EPL. This helps to create an overview of the overall influence of home advantage at a glance. Subsequently, I depicted a visual comparison of the influence of home advantage on shots on target, since many football fans attribute the ability of the football club to clinch shots on target as a defining contributing factor to their success/wins. This was done through line graphs, which compared each team's performance in terms of shots on target to the away games or home games. Lastly, a visual representation of the weekly rankings in line graphs was depicted as this visually allowed viewers to see the influence of home games on the Big Six teams' wins in the EPL. This also added a chronological factor to the analysis.
 
@@ -59,11 +59,11 @@ knitr::include_graphics("Rankplot.png")
 
 From the above graph, we can see that most of the teams seem to stay largely at the top ranks for each week, especially teams like Liverpool, Chelsea, and Manchester United. Hence, we take a look at the proportion of games overall played on home ground for each of these three teams to compare and from the data collected above we know that each team has the same number of games (19) played on home ground and each get to be the "Home Team" for 19 matches.
 
-### Conclusion 
+### Conclusion
 
 All in all, it is clear that most of the teams playing on home ground do have some advantage, and it does have significant contribution for the games, however there are exceptions such as for teams like the Tottenham Hotspurs, and in such cases it is valuable to consider other variable factors affecting the gameplay of the teams involved.
 
-### References: 
+### References:
 
 | *Premier league competition format & history \| premier league*. (n.d.). Retrieved 6 November 2023, from <https://www.premierleague.com/premier-league-explained>
 
