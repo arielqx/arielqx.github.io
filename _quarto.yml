@@ -32,7 +32,6 @@ format:
   html:
     theme: 
        light: pulse
-       dark: vapor
     fontsize: 1.0em
     linestretch: 1.7
     linkcolor: darkorchid
