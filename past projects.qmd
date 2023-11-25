@@ -76,4 +76,4 @@ Here's a snippet of the work I've done for NM2207 so far! 😊
 
 ## Final Submission
 
--   [Write-up!](https://github.com/arielqx/Github-Folder/tree/main/Week-13)
+-   [Write-up](https://github.com/arielqx/Github-Folder/tree/main/Week-13)
